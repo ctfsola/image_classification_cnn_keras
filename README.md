@@ -1,5 +1,5 @@
-## image_classification_cnn_keras
-# 使用Python深度学习API框架keras 构建卷积神经网络进行图像分类
+# image_classification_cnn_keras
+## 使用Python深度学习API框架keras 构建卷积神经网络进行图像分类
 
 使用方式：
 -  1.往 /data/train 和 /data/val 两个文件夹里从0开始创建并命名文件夹名，有多少个类就建多少个文件夹,文件夹名即类名序号.
