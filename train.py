@@ -1,3 +1,8 @@
+# -*- coding:utf-8 -*-
+#
+#   Author  :   穿雨
+#   E-mail  :   1148803569@qq.com
+#   Desc    :   训练脚本
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -141,7 +146,7 @@ history = model.fit(train_images, train_labels,
 test_loss, test_acc = model.evaluate(test_images,test_labels)
 print('test_acc',test_acc)
 
-model.save_weights('model_weights.h5')
+#model.save_weights('model_weights.h5')
 model.save('model.h5')
 
 loss = history.history['loss']

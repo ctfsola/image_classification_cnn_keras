@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-
+#   Author  :   穿雨
+#   E-mail  :   1148803569@qq.com
+#   Desc    :   验证脚本
 import time
 time1 = time.time()
 import keras

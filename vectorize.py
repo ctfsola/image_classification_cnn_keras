@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
+#   Author  :   穿雨
+#   E-mail  :   1148803569@qq.com
+#   Desc    :   数据预处理（向量化）脚本
+
 import numpy as np
 import os
 from PIL import Image
-
-
 
 # 从文件夹读取图片和标签到numpy数组中
 # 标签信息在文件夹名中，例如1/100.jpg表示该图片的标签为1
