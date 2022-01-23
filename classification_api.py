@@ -4,13 +4,13 @@ from PIL import Image
 from io import BytesIO
 import imghdr
 import os
-
 import numpy as np
 from keras.models import load_model
 from keras.preprocessing.image import img_to_array, load_img
 #import matplotlib.pyplot as plt 
 import random
 from starlette.middleware.cors import CORSMiddleware
+from config import get_config_data
 
 app = FastAPI()
 
@@ -23,7 +23,7 @@ app.add_middleware(
     allow_headers=["*"],   
 )
 
-base_dir   = 'F:\\py_experiment\\'
+base_dir   = get_config_data()['base_dir'] #'F:\\py_experiment\\'
 model_path = base_dir+'model.h5'
 model      = load_model(model_path)
 cates      = ['分类1','分类2','分类3','分类4']

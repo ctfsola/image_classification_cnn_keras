@@ -6,6 +6,7 @@
 import numpy as np
 import os
 from PIL import Image
+from config import get_config_data
 
 # 从文件夹读取图片和标签到numpy数组中
 # 标签信息在文件夹名中，例如1/100.jpg表示该图片的标签为1
@@ -53,7 +54,7 @@ def vectorize(fnames):
 
 
 def load_data():
-	base_dir  = 'F:/py_experiment/'
+	base_dir  = get_config_data()['base_dir'] #'F:/py_experiment/'
 	data_dir  = base_dir+'data/'
 	train_dir = data_dir+'train/'
 	val_dir   = data_dir+'val/'

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
 	<title></title>
 	<style type="text/css">
 		.res{
@@ -8,10 +9,13 @@
 			list-style: none;
 			text-align: left;
 		}
-		#res{
-			width: 13%;
-    		margin: 0 auto;
-		}
+		
+        #res{
+            width: 100%;
+            margin: 0 auto;
+            height: 10%;
+            display: block;
+        }
 	</style>
 </head>
 <body>
@@ -28,7 +32,9 @@
 		    <div id="fileName"></div>
 		    <div id="fileSize"></div>
 		    <div id="fileType"></div>
-		    <div id="img"><img id="preview" style="width: 450px;height: 450px;"></div>
+            <div id="img" >
+                <img id="preview" style="width: auto;height: auto;max-width: 90%;max-height: 100%;" >
+            </div>
 		    <div id="res"></div>
 		    <div class="row">
 		        <input type="button" onclick="uploadFile()" value="Upload">

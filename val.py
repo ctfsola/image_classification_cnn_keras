@@ -12,7 +12,9 @@ from keras.preprocessing.image import img_to_array, load_img
 from keras.models import load_model
 import os
 import sys
-base_dir = 'F:\\py_experiment\\'
+from config import get_config_data
+
+base_dir = get_config_data()['base_dir'] #'F:\\py_experiment\\'
 model_path = base_dir+'model.h5'
 model = load_model(model_path)
 #model = model.load_weights(model_path)
